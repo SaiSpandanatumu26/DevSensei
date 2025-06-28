@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Compiler - DevSensei</title>
+  <link rel="stylesheet" href="7.css" />
+</head>
+<body>
+
+  <div class="languages-bar">
+    <button onclick="selectLanguage('next js')">next js</button>
+    <button onclick="selectLanguage('vanilla js')">vanilla js</button>
+    <button onclick="selectLanguage('React js')">react js</button>
+    
+  </div>
+
+  <div class="prompt-bar">
+    <input type="text" id="promptInput" placeholder="Describe the program you want to generate..." />
+    <button onclick="generateCode()">Generate</button>
+  </div>
+
+  <div class="compiler-container" id="compilerContainer">
+    <!-- Hidden until Generate is clicked -->
+  </div>
+
+  <script src="7.js"></script>
+</body>
+</html>
